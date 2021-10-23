@@ -45,28 +45,31 @@ document.getElementById('add-sugar').addEventListener('click', function() {
 })
 
 document.getElementById('minus-gb').addEventListener('click', function() {
-    gb = gb - 1
+    gb = Math.max(0, gb - 1)
     document.getElementById('qty-gb').innerHTML = gb
     console.log(gb)
     console.log(x)
     document.getElementById('qty-total').innerHTML = total
     total = sugar + gb + cc - 1
+    total = Math.max(0, sugar + gb + cc - 1)
 })
 
 document.getElementById('minus-cc').addEventListener('click', function() {
-    cc = cc - 1
+    cc = Math.max(0, cc - 1)
     document.getElementById('qty-cc').innerHTML = cc
     console.log(cc)
     console.log(y)
     document.getElementById('qty-total').innerHTML = total
     total = sugar + gb + cc - 1
+    total = Math.max(0, sugar + gb + cc - 1)
 })
 
 document.getElementById('minus-sugar').addEventListener('click', function() {
-    sugar = sugar - 1
+    sugar = Math.max(0, sugar - 1)
     document.getElementById('qty-sugar').innerHTML = sugar
     console.log(sugar)
     console.log(z)
     document.getElementById('qty-total').innerHTML = total
     total = sugar + gb + cc - 1
+    total = Math.max(0, sugar + gb + cc - 1)
 })
