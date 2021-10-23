@@ -5,3 +5,4 @@ Use this code as a basis for your placement exam. As always, read through the co
 **Your job is to write the JavaScript code that will bring this mini-website to life!**
 
 ![Finished Result](./finished-result.png)
+# Placement-Exam-Starter-Code
